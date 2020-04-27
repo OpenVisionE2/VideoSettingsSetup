@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from Plugins.Plugin import PluginDescriptor
 from Components.ConfigList import ConfigListScreen
 from Components.config import getConfigListEntry, config, ConfigNothing, ConfigSelection
@@ -94,7 +97,7 @@ class videoSettingsSetup(Screen, ConfigListScreen):
 
     def confirm(self, confirmed):
         if not confirmed:
-            print 'not confirmed'
+            print('not confirmed')
         else:
             self.keySave()
 
@@ -114,7 +117,7 @@ class videoSettingsSetup(Screen, ConfigListScreen):
 
     def keyBlueConfirm(self, confirmed):
         if not confirmed:
-            print 'not confirmed'
+            print('not confirmed')
         else:
             if self.contrastEntry is not None:
                 config.vset.contrast.setValue(128)
@@ -195,7 +198,7 @@ class videoSettingsPreview(Screen, ConfigListScreen):
             else:
                 self.isStepSlider = False
         except AttributeError:
-            print 'no max value'
+            print('no max value')
 
     def keyLeft(self):
         if self.isStepSlider is True:

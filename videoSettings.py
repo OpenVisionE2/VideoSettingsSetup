@@ -1,3 +1,6 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
+from __future__ import print_function
 from Components.config import config, ConfigSubsection, ConfigSlider, ConfigSelection, ConfigNothing, NoSave
 from Tools.CList import CList
 from os import path as os_path
@@ -23,7 +26,7 @@ class videoSettings:
             try:
                 os.system('echo "' + str(self.myval1) + '" > /proc/videosettings')
             except IOError:
-                print "couldn't apply vset values."
+                print("couldn't apply vset values.")
 
         config.vset.contrast = ConfigSlider(default=128, limits=(0, 255))
         config.vset.contrast.addNotifier(setContrast)
@@ -34,7 +37,7 @@ class videoSettings:
             try:
                 os.system('echo "' + str(self.myval2) + '" > /proc/videosettings')
             except IOError:
-                print "couldn't apply vset values."
+                print("couldn't apply vset values.")
 
         config.vset.brightness = ConfigSlider(default=128, limits=(0, 255))
         config.vset.brightness.addNotifier(setBrightness)
@@ -45,7 +48,7 @@ class videoSettings:
             try:
                 os.system('echo "' + str(self.myval3) + '" > /proc/videosettings')
             except IOError:
-                print "couldn't apply vset values."
+                print("couldn't apply vset values.")
 
         config.vset.saturation = ConfigSlider(default=128, limits=(0, 255))
         config.vset.saturation.addNotifier(setSaturation)
@@ -56,13 +59,13 @@ class videoSettings:
             try:
                 os.system('echo "' + str(self.myval4) + '" > /proc/videosettings')
             except IOError:
-                print "couldn't apply vset values."
+                print("couldn't apply vset values.")
 
         config.vset.hue = ConfigSlider(default=64, limits=(0, 128))
         config.vset.hue.addNotifier(setHue)
 
         def setSplitMode(config):
-            print '--> setting splitmode to:', str(config.value)
+            print('--> setting splitmode to:', str(config.value))
 
         config.vset.split = NoSave(ConfigNothing())
 
