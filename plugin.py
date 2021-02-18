@@ -36,7 +36,7 @@ class videoSettingsSetup(Screen, ConfigListScreen):
     def layoutFinished(self):
         self.setTitle(_('Video Setup'))
 
-    def addToConfigList(self, description, configEntry, add_to_xtdlist = False):
+    def addToConfigList(self, description, configEntry, add_to_xtdlist=False):
         if isinstance(configEntry, ConfigNothing):
             return None
         entry = getConfigListEntry(description, configEntry)
@@ -152,7 +152,7 @@ class videoSettingsSetup(Screen, ConfigListScreen):
 class videoSettingsPreview(Screen, ConfigListScreen):
     skin = '\n\t\t<screen name="videoSettingsPreview" position="center,360" size="560,170" title="videoSettingsPreview">\n\t\t\t<ePixmap pixmap="buttons/red.png" position="0,0" size="140,40" alphatest="on" />\n\t\t\t<ePixmap pixmap="buttons/green.png" position="140,0" size="140,40" alphatest="on" />\n\t\t\t<widget source="key_red" render="Label" position="0,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#9f1313" transparent="1" />\n\t\t\t<widget source="key_green" render="Label" position="140,0" zPosition="1" size="140,40" font="Regular;20" halign="center" valign="center" backgroundColor="#1f771f" transparent="1" />\n\t\t\t<widget name="config" position="5,50" size="550,80" scrollbarMode="showOnDemand" />\n\t\t\t<ePixmap pixmap="div-h.png" position="0,130" zPosition="1" size="560,2" />\n\t\t\t<widget source="introduction" render="Label" position="0,140" size="550,25" zPosition="10" font="Regular;21" halign="center" valign="center" backgroundColor="#25062748" transparent="1" />\n\t\t</screen>'
 
-    def __init__(self, session, configEntry = None, oldSplitMode = None, maxValue = None):
+    def __init__(self, session, configEntry=None, oldSplitMode=None, maxValue=None):
         Screen.__init__(self, session)
         self.onChangedEntry = []
         self.setup_title = 'videoSettings'
