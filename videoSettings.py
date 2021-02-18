@@ -6,6 +6,7 @@ from Tools.CList import CList
 from os import path as os_path
 import os
 
+
 class videoSettings:
     firstRun = True
 
