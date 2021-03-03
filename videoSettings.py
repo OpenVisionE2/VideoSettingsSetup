@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 from __future__ import print_function
 from Components.config import config, ConfigSubsection, ConfigSlider, ConfigSelection, ConfigNothing, NoSave
-from Tools.CList import CList
-from os import path as os_path
 import os
 
 
