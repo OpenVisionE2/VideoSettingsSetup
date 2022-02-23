@@ -1,3 +1,3 @@
-VideoSettingsSetup [![License: LGPL v3.0](https://img.shields.io/badge/License-LGPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)
+VideoSettingsSetup [![License: LGPL v3.0](https://img.shields.io/badge/License-LGPL%20v3.0-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0) [![videosettingssetup](https://github.com/OpenVisionE2/VideoSettingsSetup/actions/workflows/videosettingssetup.yml/badge.svg)](https://github.com/OpenVisionE2/VideoSettingsSetup/actions/workflows/videosettingssetup.yml) [![ovbot](https://github.com/OpenVisionE2/VideoSettingsSetup/actions/workflows/ovbot.yml/badge.svg)](https://github.com/OpenVisionE2/VideoSettingsSetup/actions/workflows/ovbot.yml)
 ==================
 VideoSettingsSetup enigma2 plugin for AZBox
